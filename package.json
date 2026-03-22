@@ -1,0 +1,19 @@
+{
+  "name": "my-node-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "build": "pkg index.js -t node18-win-x64 --output ./dist/app.exe --public",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "my-node-app": "file:",
+    "playwright": "^1.52.0",
+    "winston": "^3.17.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "boxednode": "^2.4.4"
+  }
+}
